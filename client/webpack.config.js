@@ -17,6 +17,7 @@ module.exports = () => {
     output: {
       filename: "[name].bundle.js", // filenames based on entry point names
       path: path.resolve(__dirname, "dist"), // Output directory
+      publicPath: '/',
     },
     // Configuration for various Webpack plugins
     plugins: [
@@ -38,6 +39,7 @@ module.exports = () => {
           {
             src: path.resolve("src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons')
           },
         ],
       }),
