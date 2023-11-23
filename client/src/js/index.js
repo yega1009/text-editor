@@ -3,9 +3,11 @@ import Editor from './editor';
 import './database';
 import '../css/style.css';
 
+// Select the main DOM element
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
+// Function to load the spinner during loading process
 const loadSpinner = () => {
   const spinner = document.createElement('div');
   spinner.classList.add('spinner');
@@ -17,8 +19,10 @@ const loadSpinner = () => {
   main.appendChild(spinner);
 };
 
+// Initialize the Editor
 const editor = new Editor();
 
+// Display spinner if the editor is not defined
 if (typeof editor === 'undefined') {
   loadSpinner();
 }
