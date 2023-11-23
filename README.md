@@ -33,6 +33,10 @@ Deployment:
 - Run npm install in the root directory to install all dependencies.
 - Use npm run start:dev to start the development server.
 
+## Screenshot of the Website
+
+![Screenshot 1](./client/src/images/screenshot.png)
+
 ## Contribution
 
 N/A
