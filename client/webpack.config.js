@@ -50,7 +50,25 @@ module.exports = () => {
 
     module: {
       rules: [
-        
+        // Module rules for processing different types of files
+        {
+          test: /\.css$/i, // Regex for CSS files
+          use: [MiniCssExtractPlugin.loader, "css-loader"], // Use CSS loader and MiniCssExtractPlugin
+        },
+        {
+          test: /\.m?js$/, // Regex for JavaScript files
+          exclude: /node_modules/, // Exclude node_modules directory
+          use: {
+            loader: "babel-loader", // Use Babel loader for JavaScript transpilation
+            options: {
+              presets: ["@babel/preset-env"], // Preset for compiling ES6+ down to ES5
+              plugins: [
+                "@babel/plugin-proposal-object-rest-spread", // Plugin for object spread/rest
+                "@babel/transform-runtime", // Plugin for Babel runtime transformations
+              ],
+            },
+          },
+        },
       ],
     },
   };
