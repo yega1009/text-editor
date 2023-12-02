@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 // Set a default port for the server to listen on or use the port provided by the environment
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3010;
 
 // Serve static files from the 'dist' directory in the client folder
 app.use(express.static('../client/dist'));
