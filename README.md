@@ -6,11 +6,12 @@
 
 ## Description
 
-- Just Another Text Editor (JATE) is a Progressive Web Application (PWA) designed for efficient text editing. 
-- This full-stack application is deployable on Heroku
-- This application utilizes web technologies like Webpack for asset bundling, Babel for JavaScript transpilation, and Workbox for service worker implementation.
-- JATE operates both online and offline by using IndexedDB for client-side storage, ensuring data persistence and reliability. 
-- The editor also includes an installable desktop version for better accessibility.
+- Progressive Web Application: JATE is a highly efficient text editor designed as a PWA.
+- Full-Stack Deployment: Easily deployable on Heroku for widespread accessibility.
+- Modern Web Technologies: Utilizes Webpack for bundling, Babel for JavaScript transpilation, and Workbox for service worker implementation.
+- Online and Offline Functionality: IndexedDB integration ensures data persistence and reliability, whether online or offline.
+- Desktop Version: Offers an installable desktop application for enhanced accessibility and convenience.
+- User-Friendly Interface: Designed for both developers and general users, offering a seamless text editing experience.
 
 ## Usage
 
@@ -35,7 +36,11 @@ Deployment:
 
 ## Screenshot of the Website
 
-![Screenshot 1](./client/src/images/screenshot.png)
+- Below are the screenshots of the app's main page, registered service worker, manifest.json file, and IndexedDB storage.
+![Screenshot 1](./client/src/images/main-page.png)
+![Screenshot 2](./client/src/images/service-worker.png)
+![Screenshot 3](./client/src/images/manifest.json-file.png)
+![Screenshot 4](./client/src/images/indexed-db-storage.png)
 
 ## Contribution
 
